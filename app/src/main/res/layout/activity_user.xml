@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUser">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/myspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:entries="@array/specialize">
+        </Spinner>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="بحث"
+            android:textSize="20dp"
+            android:background="#f00"
+            android:textColor="#fff"
+            android:onClick="btn_Search"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

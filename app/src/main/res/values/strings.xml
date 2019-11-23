@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">industrial</string>
+    <string-array name="specialize">
+        <item>نجار</item>
+        <item>كهربائى</item>
+        <item>سباك</item>
+        <item>نقاش</item>
+        <item>مبيض_محاره</item>
+        <item>سيراميك</item>
+
+    </string-array>
+</resources>

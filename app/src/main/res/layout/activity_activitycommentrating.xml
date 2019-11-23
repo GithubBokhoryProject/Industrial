@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitycommentrating">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#62C9F7"
+        android:layout_height="wrap_content">
+        <RatingBar
+            android:id="@+id/rating_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#0037FF"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:onClick="btn_addrating"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Edit_comment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter comment"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="اظهار التقييمات"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:onClick="btn_ShowRating"
+        />
+    <ListView
+        android:id="@+id/listviewrating_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

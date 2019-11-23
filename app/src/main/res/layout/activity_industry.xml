@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityIndustry">
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/pass_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="تسجيل الدخول"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:background="#00BCD4"
+        android:textColor="#fff"
+        android:layout_marginBottom="15dp"
+        android:onClick="btn_Logain"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="تسجيل صنيعي جديد"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:background="#0E40D6"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:onClick="btn_Register"
+        />
+
+
+</LinearLayout>

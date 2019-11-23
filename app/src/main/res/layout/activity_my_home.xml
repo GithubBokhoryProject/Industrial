@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ActivityMyHome">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgview_id"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/imageuser"
+                android:layout_gravity="center"
+                android:onClick="imageviewronclick"
+                />
+            <EditText
+                android:id="@+id/edit_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/edit_phone_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Phone"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:inputType="phone"
+                />
+
+            <Spinner
+                android:id="@+id/myspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+
+                android:entries="@array/specialize">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/edit_locationmain_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="مكان العمل الرئيسي"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edit_anotherlocation_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اماكن اخري يمكن الانتقال اليها"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                />
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:text="ADDUSER"
+                android:textSize="20dp"
+                android:onClick="btn_addindustry"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
